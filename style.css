@@ -1,0 +1,157 @@
+body
+{
+  font-family: 'Roboto', sans-serif;
+}
+.menu
+{
+  position: relative;
+  display: inline-block;
+}
+.tresc 
+{
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 56px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.tresc button 
+{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.opcja {width: 56px;}
+.menu:hover .tresc {display: block;}
+button
+{
+  text-align: center;
+  border-width: 0px;
+}
+button:hover
+{
+  transition-duration: 0.4s;
+  background-color: #3e8e41;
+  color: #ffffff;
+}
+.guzik
+{
+  background-color: #4CAF50;
+  border-width: 0px;
+  color: white;
+  padding: 8px 16px;
+}
+.guzik:hover
+{
+  background-color: #3e8e41;
+}
+header, footer
+{
+  width: 100%;
+  transition-duration: 0.6s;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+header:hover, footer:hover, article:hover, .oceny-output:hover, .ocena:hover
+{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.content
+{
+  display: grid;
+  grid-template-columns: 20% 70%;
+  grid-gap: 10px;
+}
+.ocena
+{
+  width: 50px;
+  height: 60px;
+  padding-bottom:10px;
+  padding-top: 10px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 70% 25%;
+  transition-duration: 0.6s;
+  background-color: #4CAF50;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  float: left;
+}
+.ocena:hover
+{
+  transition-duration: 0.6s;
+  background-color: #3e8e41;
+}
+.ocena hr
+{
+  border-color: #3e8e41;
+  border-width: 1px;
+}
+.ocena:hover hr
+{
+  transition-duration: 0.6s;
+  border-color: #ffffff;
+}
+article
+{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition-duration: 0.6s; 
+}
+.button
+{
+  border-width: 0px;
+  padding: 8px 16px;
+  margin-top: 5px;
+  background-color: #4CAF50;
+  color: #ffffff;
+  transition-duration: 0.6s;
+}
+.button:hover
+{
+  border-radius: 16px;
+}
+.bmi
+{
+  width: 75%;
+  text-align: center;
+}
+.dane-osobowe
+{
+  width: 75%;
+
+}
+.srednia
+{
+  display: grid;
+  grid-template-columns: 20% 70%;
+  column-gap: 20px;
+}
+#wynik-ocen
+{
+
+}
+@media screen and (max-width: 1005px)
+{
+  .content
+  {
+    grid-template-columns: 100%;
+  }
+}
+@media screen and (max-width: 1340px)
+{
+  .srednia
+  {
+    grid-template-columns: 100%;
+  }
+  .oceny-output
+  {
+    margin-top: 15px;
+  }
+}
